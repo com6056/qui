@@ -1,7 +1,9 @@
 # Remote Agent Design (RFC)
 
-Status: draft / RFC for #dev-general
+Status: historical reference, see note below
 Audience: qui maintainers + collaborators
+
+> **Status note, August 2026:** this doc is from April 2026 and predates the maintainer-side work in PR #1820 and its successor stack (#1913/#1914/#1917), which went with an SSH transport and a `qui-helper` binary instead of the standalone HTTPS daemon described here. I'm not pushing this design over that one. The parts that still apply to either transport are the path safety analysis in section 7, the auth and at-rest encryption notes in section 8, and the failure semantics in section 11. Everything transport-specific is kept for reference only. Current state lives in the discussion: https://github.com/autobrr/qui/discussions/1814
 
 ## 1. Problem
 
